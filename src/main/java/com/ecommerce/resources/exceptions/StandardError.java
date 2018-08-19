@@ -1,6 +1,7 @@
 package com.ecommerce.resources.exceptions;
 
 import java.io.Serializable;
+import java.util.List;
 
 public class StandardError implements Serializable{
 	
@@ -11,7 +12,7 @@ public class StandardError implements Serializable{
 	private String mensagem; 
 	
 	private Long timeStamp;
-
+	
 	public StandardError(Integer status, String mensagem, Long timeStamp) {
 		super();
 		this.status = status;
